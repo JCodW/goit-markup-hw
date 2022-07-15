@@ -47,7 +47,7 @@ body {
 }
 
 /* логотип */
-.logo {
+.logo-img {
     color: var(--logo-black, black);
     font-family: "Raleway";
     font-weight: 700;
@@ -219,7 +219,7 @@ body {
     background-color: var(--background-footer, black);
 }
 
-.footer .logo {
+.footer .logo-img {
     color: var(--white-color, white);
 }
 
@@ -291,4 +291,38 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-color, gray);
+}
+
+
+.logo, .navbar,.site-nav,.contact-nav{
+    display:flex;
+}
+
+.logo {
+margin: 24px 0 25px 218px;
+}
+.navbar{
+justify-content: space-between;
+align-items: center;
+}
+
+
+.site-nav,.contact-nav{
+    justify-content: space-between;
+}
+.link{
+    padding-left: 30px;
+}
+
+.hero{
+    height: 600px;
+    text-align: center;
+}
+.hero-title{
+padding: 200px 452px 30px;
+    margin: 0;
+}
+.hero-btn{
+width: 200px;
+height: 50px;
 }
