@@ -40,10 +40,20 @@ gray2 #F5F4FA               bgc-team section    bgc-btn-cat
     --header-line: #ececec;
 }
 
+/* * {
+    list-style: none;
+} */
+
 /* задание глобальных дначений */
 body {
     color: var(--primary-color);
     font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /* логотип */
@@ -101,6 +111,8 @@ body {
     transition: 0.3s;
 }
 
+
+
 /* параметры для списков */
 .site-nav,
 .contact-nav,
@@ -111,6 +123,18 @@ body {
 .portfolio-list,
 .addr-list {
     list-style: none;
+}
+
+.features-list,
+.section-list,
+.team-list {
+    display: flex;
+}
+
+.features-item,
+.section-item,
+.team-card {
+    margin-right: 10px;
 }
 
 /* текущая страница */
@@ -169,6 +193,7 @@ body {
 .features .section-title,
 .portfolio-main {
     opacity: 0;
+    /* display: none; */
 }
 
 /* наши преимущества */
@@ -294,35 +319,39 @@ body {
 }
 
 
-.logo, .navbar,.site-nav,.contact-nav{
-    display:flex;
+.navbar,
+.site-nav,
+.contact-nav {
+    display: flex;
 }
 
-.logo {
-margin: 24px 0 25px 218px;
-}
-.navbar{
-justify-content: space-between;
-align-items: center;
+/* .logo {
+    margin: 24px 0 25px 218px;
+} */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-.site-nav,.contact-nav{
+.site-nav,
+.contact-nav {
     justify-content: space-between;
 }
-.link{
+
+.link {
     padding-left: 30px;
 }
 
-.hero{
-    height: 600px;
+.hero {
+    padding-top: 200px;
+    padding-bottom: 210px;
     text-align: center;
 }
-.hero-title{
-padding: 200px 452px 30px;
-    margin: 0;
-}
-.hero-btn{
-width: 200px;
-height: 50px;
+
+
+.hero-btn {
+    width: 200px;
+    height: 50px;
 }
