@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw
 
-верстка макета на HTML и CSS не используя блочной модели.
+верстка макета на HTML и CSS
