@@ -51,9 +51,16 @@ body {
     list-style: none;
 }
 
+.header {
+    border-bottom: 1px solid var(--header-line: #ececec; );
+}
+
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
+    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 /* логотип */
@@ -123,18 +130,30 @@ body {
 .portfolio-list,
 .addr-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 .features-list,
 .section-list,
 .team-list {
     display: flex;
+    justify-content: center;
 }
+
+.section-list,
+.team-list {
+    padding-bottom: 94px;
+}
+
 
 .features-item,
 .section-item,
 .team-card {
     margin-right: 10px;
+    margin-right: 30px;
 }
 
 /* текущая страница */
@@ -146,6 +165,7 @@ body {
 .hero {
     background-color: var(--background-hero, black);
     color: var(--white-color, white);
+    text-align: center;
 }
 
 /* заголовок Героя */
@@ -153,7 +173,8 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    margin: 0;
+    padding: 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -166,11 +187,23 @@ body {
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     border: none;
     border-radius: 4px;
     font-family: inherit;
+}
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 210px;
+    text-align: center;
+}
+
+
+.hero-btn {
+    width: 200px;
+    height: 50px;
 }
 
 /* выделенная кнопка Героя */
@@ -187,14 +220,20 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color, black);
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 /* скрытие отображения заголовка */
 .features .section-title,
 .portfolio-main {
-    opacity: 0;
+    visibility: hidden;
+    padding-top: 44px;
+    margin: 0;
+    /* opacity: 0; */
     /* display: none; */
 }
+
 
 /* наши преимущества */
 .features-title {
@@ -244,6 +283,11 @@ body {
     background-color: var(--background-footer, black);
 }
 
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .footer .logo-img {
     color: var(--white-color, white);
 }
@@ -264,7 +308,18 @@ body {
 
 .footer .addr {
     color: var(--white-color, white);
+    margin: 0 auto;
+    padding-top: 18px;
 }
+
+.footer .link {
+    padding: 0;
+}
+
+/* .footer-content {
+    padding-left: 15px;
+} */
+
 
 /* кнопки выбора категорий портфолио */
 .category-btn {
@@ -342,16 +397,4 @@ body {
 
 .link {
     padding-left: 30px;
-}
-
-.hero {
-    padding-top: 200px;
-    padding-bottom: 210px;
-    text-align: center;
-}
-
-
-.hero-btn {
-    width: 200px;
-    height: 50px;
 }
