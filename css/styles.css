@@ -38,6 +38,8 @@ gray2 #F5F4FA               bgc-team section    bgc-btn-cat
     --footer-contact: rgba(100%, 100%, 100%, 0.6);
     --portfolio-element: #eeeeee;
     --header-line: #ececec;
+    --width-all: width:100%;
+
 }
 
 /* * {
@@ -52,7 +54,7 @@ body {
 }
 
 .header {
-    border-bottom: 1px solid var(--header-line: #ececec; );
+    border-bottom: 1px solid var(--header-line, gray);
 }
 
 .container {
@@ -60,7 +62,7 @@ body {
     margin: 0 auto;
     padding: 0 15px 0 15px;
     /* outline: 1px solid red; */
-    outline: 1px solid red;
+
 }
 
 /* логотип */
@@ -144,7 +146,8 @@ body {
 }
 
 .section-list,
-.team-list {
+.team-list,
+.portfolio {
     padding-bottom: 94px;
 }
 
@@ -174,7 +177,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     margin: 0;
-    padding: 30px;
+    padding: 0 calc(10vw + 5px) 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -220,6 +223,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color, black);
+    margin: 0;
     padding-top: 94px;
     padding-bottom: 50px;
 }
@@ -228,10 +232,14 @@ body {
 .features .section-title,
 .portfolio-main {
     visibility: hidden;
-    padding-top: 44px;
+    padding: 15px 0 40px;
     margin: 0;
     /* opacity: 0; */
     /* display: none; */
+}
+
+.portfolio-main {
+    padding-top: 44px;
 }
 
 
@@ -334,7 +342,7 @@ body {
     border: none;
     border-radius: 4px;
     font-family: inherit;
-    padding: 10px 20px;
+    padding: 6px 22px;
     margin-right: 8px;
 
 }
@@ -390,6 +398,7 @@ body {
 .navbar {
     justify-content: space-between;
     align-items: center;
+    padding: 11px 0;
 }
 
 
@@ -407,10 +416,34 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: center;
+}
 
-
+.category-filter {
+    padding-bottom: 42px;
 }
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-element {
+    width: 370px;
+    outline: 1px solid var(--portfolio-element, gray);
+}
+
+.portfolio-title,
+.portfolio-text {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.portfolio-title {
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+
+.portfolio-text {
+    padding-bottom: 20px;
 }
